@@ -1,0 +1,76 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/* Typography */
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h5{
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+h6{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+p{
+    font-family: 'Judson', serif;
+    font-size: 20px;
+}
+
+/*Layout */
+ul{
+    list-style: none;
+    display: inline;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+#splashpage-nav{
+    height: 100px;
+    background-color: rgba(0,0,0,0.50);
+}
+
+#logo img{
+    width: 100px;
+}
+
+#store-info{
+    display: inline-block;
+}
+
+/* Main Content */
+
+main{
+    width: 100%;
+    background-image: url(../img/wedding_dress_fashion.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    height: 100px
+}
