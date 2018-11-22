@@ -1,0 +1,101 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/*============Typography=================*/
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 42px;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+header h5{
+    margin: 0px 0px 5px 0px;
+    font-size: 20px;
+    color: #C40983;
+}
+
+.section-text{
+        width: 10%;
+}
+
+.section-text .heading{
+    text-indent: 25px;
+    margin: 0px;
+}
+
+.section-text .subheading{
+    margin: 0px;
+        line-height: 10px;
+}
+
+
+/*============Header==============*/
+
+header{
+    height: 100vh;
+    background-image: url("../img/h-e-r-gc.jpg");
+    background-size: cover;
+}
+
+#branding{
+    bottom: 35px;
+    width: 45vw;
+    margin-left: 50px;
+    padding: 5vw;
+    position: absolute;
+}
+
+header #logo{
+    margin-left: 8%;
+}
+
+/*================Form===============*/
+button{
+    width: 75px;
+    height: 25px;
+    border: 1px solid #fff;
+}
+
+#album .subheading{
+    text-align: right;
+}
+
+.album-links{
+    list-style: none;
+}
+
+.album-links li{
+    display: inline;
+    margin-left: 25px;
+    font-size: 25px;
+}
+
+
+/*============== Content =============*/
+#content{
+    height: 100vh;
+    padding: 75px 50px;
+}
+
+#page-header{
+    margin: 0 auto;
+}
+
+#content .container{
+    display: inline-grid;
+    grid-auto-columns: 50% 50%;
+    grid-column-gap: 5%;
+}

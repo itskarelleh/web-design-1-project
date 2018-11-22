@@ -1,8 +1,18 @@
+/******** HEX COLORS ***************/
+/*
+** Primary - #F57373
+** Seconary - #AD1896
+** Secondary 2 - #FB9469
+** Accent - #FDB70E
+*/
+
+/******GLOBAL STYLES****************/
+
 body{
     margin: 0px;
     padding: 0px;
 }
-/* Typography */
+
 h1{
     font-family: 'Playfair Display', serif;
     font-size: 40px;
@@ -32,7 +42,6 @@ p{
     font-size: 20px;
 }
 
-/*Layout */
 ul{
     list-style: none;
     display: inline;
@@ -42,35 +51,118 @@ li{
     margin-bottom: 10px;
 }
 
-/* Navigation */
+button{
+    background: #f9716d;
+    border: none;
+    width: 90px;
+    height: 50px;
+    border-radius: 5%;
+    color: #FFF;
+}
+
+/*************Navigation********************/
 #splashpage-nav{
     height: 100px;
-    background-color: rgba(0,0,0,0.50);
+    width: 100%;
+    position: absolute;
+    background-color: rgba(134, 134, 134, 0.45);
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+}
+
+#nav-menu{
+    align-self: center;
+    
+}
+
+#splashpage-nav li{
+    margin-bottom: 10px;
+    display: inline;
+    margin-left: 20px;
+}
+
+#splashpage-nav li a{
+    text-decoration: none;
+    color: #AD1896;
+    font-size: 18px;
+}
+
+#branding{
+    margin-left: 75px;
 }
 
 #logo img{
-    width: 100px;
+    width: 150px;
+    margin-top: 2vh;
 }
 
 #store-info{
-    display: inline-block;
+    margin-right: 75px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    color: #AD1896;
 }
 
 /* Main Content */
-
-main{
+#splashpage{
+    /* Grid */
+    display: grid;
+    grid-template-columns: 5% 95%;
+    align-content: center;
+    grid-template-areas: "a b"; 
+    
+    
+    /*H & W */
     width: 100%;
-    background-image: url(../img/wedding_dress_fashion.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     height: 100vh;
+    
+    /*Background*/
+    background-image: url("../img/wedding_dress_fashion.jpeg");
+    background-size: cover;
+    background-position-y: -51vh;
 }
 
-footer{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    background-color: rgba(0,0,0,0.5);
-    height: 100px
+#header-text{
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.heading-1{
+    font-size: 62px;
+    font-weight: 900;
+    color: #F57373;
+    text-align: center;   
+}
+
+#header-text button{
+    margin: 0 auto;
+    justify-self: center;
+}
+
+
+#social-profiles{
+    grid-area: a;
+    
+}
+/* Font Awesome */
+.fab{
+    font-size: 35px;
+    margin-bottom: 45px;
+    color: #FDB70E;
+}
+
+
+/****** MEDIA QUERIES *********/
+
+@media screen and (min-width: 320px) and (max-width: 1000px){
+    /* Main Content */
+    #splashpage{
+        background-position-y: 0vh;
+        
+    }
+    
 }

@@ -1,34 +1,32 @@
-let theArticleTitle;
-let theArticleImage;
+//The Article Title
+var theArticleTitle;
 
-class theArticle{
-    constructor(mTitle = String, mImage = Image){
+//The Article Image
+var theArticleImage;
 
-        this.theArticleTitle = mTitle;
-        this.theArticleImage = mImage;
-    }     
+//The Article constructor
+function theArticle(mTitle=String, mImage=Image){
+
+    this.theArticleTitle = mTitle;
+    this.theArticleImage = mImage;
+}     
+
+//The Articles
+var articleOne = new theArticle("Bonjour Monde", "../img/globe.jpeg");
+var articleTwo = new theArticle("Comment allez vous?", "../img/download.jpg");
+//var articleThree = new theArticle("","../img/");
+
+
+
+var theImage = document.createElement("IMG");
+
+//Insert Img after article div
+var theArticleDiv = document.getElementsByClassName("article");
+
+
+theImage.after(theArticleDiv);
+function theArticleContainer(){
+    theImage.setAttribute("src", theArticle);
 }
 
-let titleContainer = document.getElementsByClassName("article-heading");
-let imgContainer = document.getElementsByClassName("thumbnail");
-
-class articleContainer extends theArticle{
-    constructor(mTitleContainer, mImgContainer){
-        this.theTitleContainer = mTitleContainer;
-        this.theImgContainer = mImgContainer;
-    }
-}
-
-var theArticles = new theArticle("Bonjour Monde", "../img/globe.jpeg");
-
-var theArticlesLength = theArticles.length;
-
-for(i = 0; i < theArticlesLength; i++){
-    var newElement = document.createElement('div');
-    newElement.className = "article";
-    newElement.innerHTML = theArticles[i];
-    document.body.appendChild(newElement);
-
-}
-
-var theArticlesSection = document.getElementById("latest-articles");
+console.log(articleOne,articleTwo);
