@@ -1,17 +1,25 @@
-var socialMedia = document.getElementById("social-profiles");
-var navMenu = document.getElementById("nav-menu");
-var storeInfo = document.getElementById("store-info");
+var navMenu, storeInfo;
+navMenu = document.getElementById("nav-menu");
+storeInfo = document.getElementById("store-info");
 
-var hamburgerMenu = document.getElementsByClassName("fa-bars");
-hamburgerMenu.style.visibility = "hidden";
 
-function mediaQuery() {
+var hamburgerMenu = document.getElementById("hamburger");
+
+function showMenuMobile() {
     'use strict';
-    if (window.matchMedia("(min-width: 320px)").matches && window.matchMedia("(max-width: 600px)").matches) {
-    socialMedia.style.visibility = "hidden";
-    navMenu.style.visibility = "hidden";
-    hamburgerMenu.style.visibility = "visible";    }
+    
+    var buttonClicked = false;
+    navMenu = document.getElementById("nav-menu");
+    storeInfo = document.getElementById("store-info");
+    
+    if (buttonClicked === false) {
+        navMenu.style.visibility = 'visible';
+        storeInfo.style.visibility = 'visible';
+        buttonClicked = true;
+    } else{
+        navMenu.style.visibility = 'hidden';
+        storeInfo.style.visibility = 'hidden';
+    }
 }
 
-mediaQuery();
-
+hamburgerMenu.addEventListener("click", showMenuMobile, true);

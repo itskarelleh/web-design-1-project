@@ -5,64 +5,194 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Mercy Corps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!--Stylesheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/news.css" />
+    <!--Javascript-->
     <script src="../news/js/main.js"></script>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Radley|Scada:400,400i,700" rel="stylesheet">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="site-nav">
+    <nav id="site-nav">
         <div class="branding">
-            <img id="logo" src="" alt="mercy corps">
-            <h4>Mercy Corps</h4>
+            <img id="logo" src="img/mc-logo@2x.png" alt="mercy corps">
+            <div class="text">
+                <h4 id="busi-name">Mercy Corps</h4>
+                <p id="slogan">Make the world more united</p>
+            </div>
+                
         </div>
+        
+        <div class="toggle-menu">
+            <ul class="menu">
+                <li><a href="news.html">Press</a></li>
+                <li><a href="../gallery/gallery.html">Media</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+            
+            <ul class777yffc  ="social">
+                <!--Facebook-->
+                <li>
+                    <a href="https://www.facebook.com/mercycorps"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                
+                <!--Twitter-->
+                <li>
+                    <a href="http://www.twitter.com/mercycorps"><i class="fab fa-twitter"></i></a>
+                </li>
+                <!--Instagram-->
+                <li>
+                    <a href="http://www.instagram.com/mercycorps"><i class="fab fa-instagram"></i></a>
+                </li>
+                
+                <!--Youtube-->
+                <li>
+                    <a href="http://www.instagram.com/mercycorps">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
     </nav>
     <main class="main-content">
         <section id="feature-articles">
-            <div class="feature-article">
-                <img src="img/vna_Indonesia_Death_toll_from_earthquake_tsunami_amounts_to_384.jpg" alt="feature">
-                <h1 class="article-heading">Indonesia devastated by magnitude 7.5 earthquake and tsunami</h1>
+            <div id="feature-article">
+                <figure class="thumbnail">
+                    <img src="img/indonesia-2018.jpg">
+                    <h1 class="article-heading">Indonesia devastated by magnitude 7.5 earthquake and tsunami</h1>
+                </figure>
+                
             </div>
             
-            <!--Article 2 & 3-->
-           <div class="container">
-                <div class="article">
-                    <figure class="thumbnail">
-                        <img src="img/smoke-chimney-industrial-29465.jpg" alt="2">
-                    </figure>
-                    <h1 class="article-heading">
-                    Climate Change is the Ultimate 'Threat Multiplier'</h1>
-                </div>
-    
-                <div class="article">
-                    <figure class="thumbnail">
-                        <img src="" alt="2">
-                    </figure>
-                    <h1 class="article-heading"></h1>
-                </div>
-            </div>-->
+            <div id="article-one" class="article">
+                <figure class="thumbnail">
+                    <img src="img/climate-cold-glacier-iceberg.jpg" alt="2">
+                </figure>
+                <h1 class="article-heading">
+                Climate Change is the Ultimate 'Threat Multiplier'</h1>
+            </div>
+
+            <div id="article-two" class="article">
+                <figure class="thumbnail">
+                    <img src="img/columbia-border.jpg" alt="2">
+                </figure>
+                <h1 class="article-heading">Mercy Corps Expands Colombia
+Border Response To Venezuela Crisis</h1>
+            </div>
         </section>
 
         <section id="latest-articles">
-            <h3 class="section-title"></h3>
-            
+            <h3 class="section-title">Latest</h3>
             <!--Articles-->
             <div class="container">
                 <div class="article">
+                    <img src="img/download-2.jpg">
+                    <h3>How to Help Indonesia Earthquake and Tsunami Survivors</h3>
                 </div>
+                
+                <div class="article">
+                    <img src="img/download-3.jpg">
+                    <h3>Increasing Violence in DRC Threatens Efforts Against Ebola</h3>
+                </div>
+                
+                <div class="article">
+                    <img src="img/download-4.jpg">
+                    <h3>Tunisia, country of destination and transition for sub-Saharan African migrants</h3>
+                </div>
+                
+                <div class="article">
+                    <img src="img/download.jpg">
+                    <h3>The Protection of Rights of Migrants in C.America Caravan
+                    </h3>
+                </div>
+                
+                <div class="article">
+                    <img src="img/download-5.jpg">
+                    <h3>Heat owner Mick Arison makes donations
+                    </h3>
+                </div>
+                
+                <div class="article">
+                    <img src="img/download-6.jpg">
+                    <h3>Vijaya Gadde added to Mercy Corps Board of Directors
+                    </h3>
+                </div>
+                
             </div>
         </section>
 
-        <form id="newsletter" action="GET">
-            <img src="" alt="form-img">
-            <h4 id="form-header">Sign Up for Our News Letter</h4>
-            <label for="uName">Name</label>
-            <input type="text" name="uName" placeholder="Jane Doe">
+        <form id="newsletter" action="POST">
+            <figure id="form-img">
+                <img src="img/pexels-photo-1493377.jpeg" alt="form-img">
+            </figure>
+            
+            <div id="cta">
+                 <h3 id="form-header">Sign Up for Our News Letter</h3>
+                <p>Keep up to date with current events and opportunities to take action.</p>
+            </div>
+            
+            <div id="inputs">
+                <div class="input-and-label">
+                    <label for="uName">Name</label>
+                    <br>
+                    <input type="text" name="uName" placeholder="Jane Doe">
+                </div>
 
-            <label for="eMail">Email</label>
-            <input type="text" name="eMail" placeholder="jane.doe@example.com">
+                <div class="input-and-label">
+                    <label for="eMail">Email</label>
+                    <br>
+                    <input type="text" name="eMail" placeholder="jane.doe@example.com">                
+                </div>
+                <button type="submit">Submit</button>
+
+            </div>
         </form>
     </main>
-    <footer class="footer"></footer>
+    <footer id="footer">
+        <ul class="menu">
+            <h3>Company</h3>
+            <li><a href="news.html">Press</a></li>
+            <li><a href="../gallery/gallery.html">Media</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+        
+        <ul class="menu">
+            <h3>Categories</h3>
+            <li><a href="#">Crime</a></li>
+            <li><a href="#">Disaters</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Economy</a></li>
+            <li><a href="#">Immigration</a></li>
+            <li><a href="#">Innovation</a></li>
+            
+        </ul>
+
+        <ul class="social">
+            <h3>Connect with Us</h3>
+            <!--Facebook-->
+            <li>
+                <a href="https://www.facebook.com/mercycorps"><i class="fab fa-facebook-f"></i></a>
+            </li>
+
+            <!--Twitter-->
+            <li>
+                <a href="http://www.twitter.com/mercycorps"><i class="fab fa-twitter"></i></a>
+            </li>
+            <!--Instagram-->
+            <li>
+                <a href="http://www.instagram.com/mercycorps"><i class="fab fa-instagram"></i></a>
+            </li>
+
+            <!--Youtube-->
+            <li>
+                <a href="http://www.instagram.com/mercycorps">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>

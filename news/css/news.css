@@ -1,0 +1,268 @@
+h1{
+    font-family: 'Scada', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+h3{
+    font-family: 'Scada', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Radley', serif;
+    background-color: #00385e;
+}
+
+main{
+    padding: 25px 25px;
+    background-color: white;
+    margin: 0px 75px;
+}
+
+#site-nav{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 1fr;
+    border-bottom: 1px solid #cccccc;
+    padding-top: 15px;
+    background-color: white;
+    height: 60px;
+}
+
+#logo{
+    width: 100px;
+}
+
+.toggle-menu{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-content: center;
+}
+
+#site-nav ul{
+    list-style: none;
+    align-self: center;
+}
+
+#site-nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.branding .text #busi-name,#slogan{
+    margin: 0px;
+}
+
+.branding{
+    margin-left: 75px;
+    grid-template-columns: 0.5fr 1fr;
+    display: grid;
+}
+
+.branding .text{
+    justify-self: start;
+}
+
+#site-nav .social{
+    justify-self: end;
+    margin-right: 75px;
+}
+
+/************ FEATURE ********************/
+
+#feature-article{
+    grid-area: feature-article;
+    width: 100%;
+}
+
+#article-one{
+    grid-area: article-one;
+}
+
+#article-two{
+    grid-area: article-two;
+}
+
+#feature-articles{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "feature-article feature-article" "article-one article-two";
+    margin: 0 auto;
+}
+
+#feature-article img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+#feature-article .thumbnail{
+    height: 40vh;
+    overflow: hidden;
+}
+
+.thumbnail{
+    margin: 0px;
+}
+
+#feature-articles .article .thumbnail{
+    height: 35vh;
+    overflow: hidden;
+}
+
+#feature-article .thumbnail .article-heading{
+    grid-area: article-heading;
+}
+
+#feature-articles .article img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/************Latest *************/
+#latest-articles .container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 25px;
+}
+
+#latest-articles .section-title{
+    color: #A2001A;
+    text-align: right;
+}
+#latest-articles .article{
+    justify-content: center;
+}
+
+#latest-articles .article img{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+
+/*********** Form/ Call to Action ***************/
+#newsletter{
+    height: 25vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+#form-img{
+    margin: 0;
+}
+
+#form-img img{
+    width: 100%;
+}
+
+#form-header{
+    color: #10bac8;
+}
+
+#cta{
+    padding: 0px 25px;
+}
+#inputs{
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr 0.1fr;
+    background: #00385e;
+    height: 90%;
+    padding-top: 25px;
+    grid-row-gap: 0px;
+    justify-content: center;
+}
+
+.input-and-label{
+    align-self: center;
+}
+
+.input-and-label label{
+    color: white;
+}
+
+.input-and-label input{
+    margin-top: 5px;
+    width: 20vw;
+    height: 25px;
+    text-indent: 10px;
+}
+
+#inputs button{
+    margin-top: 15px;
+    justify-self: center;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #A2001A;
+    background: white;
+    color: #10bac8;
+    font-family: 'Radley';
+}
+
+/*********** Footer *******************/
+#footer{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    background: white;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    width: 100%;
+    padding: 0px 35px;
+}
+
+#footer .menu li{
+    display: block;
+}
+
+
+#footer ul{
+    list-style: none;
+    align-self: center;
+        display: inline-block;
+    vertical-align: top;
+    height: 160px;
+}
+
+#footer .social li{
+    display: inline;
+    margin-right: 20px;
+}
+
+#footer h3{
+    margin: 0px 0px 10px 0px;
+}
+
+/***********Social media icons *********/
+
+.fab{
+    font-size: 2em;
+}
+
+.fa-facebook-f{
+    color: #3b5998;
+}
+
+.fa-twitter{
+    color: #1da1f2;
+}
+
+.fa-instagram{
+    color: #c32aa3;
+}
+
+.fa-youtube{
+    color:  #ff0000;
+}

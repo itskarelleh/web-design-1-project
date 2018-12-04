@@ -11,6 +11,11 @@
 body{
     margin: 0px;
     padding: 0px;
+
+    /*Background*/
+    background-image: url("../img/wedding_dress_fashion.jpeg");
+    background-size: cover;
+    background-position-y: -51vh;
 }
 
 h1{
@@ -64,10 +69,15 @@ button{
 #splashpage-nav{
     height: 100px;
     width: 100%;
-    position: absolute;
     background-color: rgba(134, 134, 134, 0.45);
     display: grid;
+    grid-template-columns: 10fr 1fr;
+}
+
+#splashpage-nav .container{
+    display: grid;
     grid-template-columns: 3fr 2fr 2fr;
+    width: 90vw;
 }
 
 #nav-menu{
@@ -99,7 +109,8 @@ button{
 #store-info{
     margin-right: 75px;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-row-gap: 1px;
     color: #AD1896;
 }
 
@@ -115,11 +126,6 @@ button{
     /*H & W */
     width: 100%;
     height: 100vh;
-    
-    /*Background*/
-    background-image: url("../img/wedding_dress_fashion.jpeg");
-    background-size: cover;
-    background-position-y: -51vh;
 }
 
 #header-text{
@@ -138,11 +144,10 @@ button{
     text-align: center;   
 }
 
-#header-text button{
+#header-text a{
     margin: 0 auto;
     justify-self: center;
 }
-
 
 #social-profiles{
     grid-area: a;
@@ -155,14 +160,39 @@ button{
     color: #FDB70E;
 }
 
+.fa-bars{
+    font-size: 2em;
+    justify-self: end;
+}
+
 
 /****** MEDIA QUERIES *********/
 
-@media screen and (min-width: 320px) and (max-width: 1000px){
+@media screen and (min-width: 320px) and (max-width: 1300px){
     /* Main Content */
-    #splashpage{
+    body{
         background-position-y: 0vh;
-        
+    }
+
+    #social-profiles{
+        visibility: hidden;
+    }
+}
+
+/* Mobile Screens*/
+@media screen and (min-width: 320px) and (max-width: 414px){
+    body{
+        background-position-y: center;
+        background-position-x: center;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px){
+    #nav-menu{
+        visibility: hidden;
     }
     
+    #store-info{
+        visibility: hidden;
+    }
 }

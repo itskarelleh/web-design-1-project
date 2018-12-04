@@ -15,10 +15,10 @@
     </head>
     <body>
         <div id="wrapper">
-            <aside id="site-nav">
+            <div id="site-nav">
                 <div id="branding">
                     <a href="../index.html">
-                        <img id="logo">
+                        <img id="logo" src="img/hg-logo@2x.png">
                     </a>
                     <h6 id="tagline">Shine.</h6>
                 </div>
@@ -57,18 +57,28 @@
                     </li>
                 </ul>
                 </div>
-            </aside>
+            </div>
             <main>
-                <!--Decorative Strips-->
-                <img id="decor" src="" alt="decorative-lines">
-                <section id="header">
-                    <h1>Shine<br>
-                        Bright<br>
-                        like a<br> 
-                        Star
-                    </h1>
-
-                    <button id="intro-btn">View Work</button>
+                <section id="intro">
+                    <!--Decorative Strips-->
+                    <div id="intro-items">
+                
+                        <img id="decor" src="img/decorative-strips.svg" alt="decorative-lines">
+                    
+                        <div class="text">
+                            <h1 id="header-heading">Shine<br>
+                            Bright<br>
+                            like a<br> 
+                            Star
+                        </h1>
+                        
+                        <a href="#work">
+                            <button id="intro-btn">View Work</button>
+                        </a>
+                        
+                        </div>
+                    
+                    </div>
                 </section>
 
                 <section id="work">
@@ -105,13 +115,20 @@
                 </section>
 
                 <form id="form">
-                    <h2 id="form-heading">It's Time for You to Shine</h2>
-                    <p id="form-para">Contact us to design your brand</p>
-                    <label for="fName">Your Name</label>
-                    <input type="text" name="fName" placeholder="Jane Doe">
+                    <div id="cta">
+                        <div class="text">
+                            <h2 id="form-heading">It's Time for You to Shine</h2>
+                        <p id="form-para">Contact us to design your brand</p>
+                        </div>
+                    </div>
+                    
+                   <div id="inputs">
+                         <label for="fName">Your Name</label>
+                        <input type="text" name="fName" placeholder="Jane Doe">
 
-                    <label for="uEmail">Your Email</label>
-                    <input type="text" name="uEmail" placeholder="jane.doe@example.com">
+                        <label for="uEmail">Your Email</label>
+                        <input type="text" name="uEmail" placeholder="jane.doe@example.com">
+                    </div>
                 </form>
             </main>
         </div>
