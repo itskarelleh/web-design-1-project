@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Stylesheet-->
     <link rel="stylesheet" type="text/css" media="screen" href="css/news.css" />
-    <!--Javascript-->
-    <script src="../news/js/main.js"></script>
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Radley|Scada:400,400i,700" rel="stylesheet">
     <!--Font Awesome-->
@@ -22,7 +20,6 @@
                 <h4 id="busi-name">Mercy Corps</h4>
                 <p id="slogan">Make the world more united</p>
             </div>
-                
         </div>
         
         <div class="toggle-menu">
@@ -89,34 +86,34 @@ Border Response To Venezuela Crisis</h1>
             <!--Articles-->
             <div class="container">
                 <div class="article">
-                    <img src="img/download-2.jpg">
+                    <img src="img/pexels-photo-159935.jpeg">
                     <h3>How to Help Indonesia Earthquake and Tsunami Survivors</h3>
                 </div>
                 
                 <div class="article">
-                    <img src="img/download-3.jpg">
+                    <img src="img/hasan-almasi-657415-unsplash.jpg">
                     <h3>Increasing Violence in DRC Threatens Efforts Against Ebola</h3>
                 </div>
                 
                 <div class="article">
-                    <img src="img/download-4.jpg">
+                    <img src="img/globe.jpeg">
                     <h3>Tunisia, country of destination and transition for sub-Saharan African migrants</h3>
                 </div>
                 
                 <div class="article">
-                    <img src="img/download.jpg">
+                    <img src="img/juan-ignacio-tapia-2316-unsplash.jpg">
                     <h3>The Protection of Rights of Migrants in C.America Caravan
                     </h3>
                 </div>
                 
                 <div class="article">
-                    <img src="img/download-5.jpg">
+                    <img src="img/christian-dubovan-686398-unsplash.jpg">
                     <h3>Heat owner Mick Arison makes donations
                     </h3>
                 </div>
                 
                 <div class="article">
-                    <img src="img/download-6.jpg">
+                    <img src="img/rawpixel-570904-unsplash.jpg">
                     <h3>Vijaya Gadde added to Mercy Corps Board of Directors
                     </h3>
                 </div>
@@ -124,7 +121,7 @@ Border Response To Venezuela Crisis</h1>
             </div>
         </section>
 
-        <form id="newsletter" action="POST">
+        <form id="newsletter">
             <figure id="form-img">
                 <img src="img/pexels-photo-1493377.jpeg" alt="form-img">
             </figure>
@@ -146,7 +143,7 @@ Border Response To Venezuela Crisis</h1>
                     <br>
                     <input type="text" name="eMail" placeholder="jane.doe@example.com">                
                 </div>
-                <button type="submit">Submit</button>
+                <button id="submit" type="button" onclick="submitForm()">Submit</button>
 
             </div>
         </form>
@@ -194,5 +191,7 @@ Border Response To Venezuela Crisis</h1>
             </li>
         </ul>
     </footer>
+        <!--Javascript-->
+    <script src="../news/js/main.js"></script>
 </body>
 </html>

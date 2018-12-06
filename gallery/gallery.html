@@ -6,7 +6,6 @@
         <title>Halo Group</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../gallery/css/gallery.css" />
-        <script src="../news/js/main.js"></script>
         <!--Font Awesome-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
         
@@ -67,53 +66,51 @@
                     
                         <div class="text">
                             <h1 id="header-heading">Shine<br>
-                            Bright<br>
-                            like a<br> 
-                            Star
-                        </h1>
-                        
-                        <a href="#work">
-                            <button id="intro-btn">View Work</button>
-                        </a>
+                                Bright<br>
+                                like a<br> 
+                                Star
+                            </h1>
+
+                            <a href="#work">
+                                <button id="intro-btn">View Work</button>
+                            </a>
                         
                         </div>
                     
                     </div>
                 </section>
-
                 <section id="work">
                     <div class="container">
                         <div class="project">
                             <div class="thumbnail">
-                                <img src="img/Group%20162.png">
+                                <img class="the-img" src="img/Group%20162.png">
                             </div>
                             <h3 class="project-heading">Wallas</h3>
                         </div>
 
                         <div class="project">
                             <div class="thumbnail">
-                                <img src="img/Group%20162.png">
+                                <img class="the-img" src="img/Group%20162.png">
                             </div>
                             <h3 class="project-heading">Wallas</h3>
                         </div>
 
                         <div class="project">
                             <div class="thumbnail">
-                                <img src="img/Group%20162.png">
+                                <img class="the-img" src="img/Group%20162.png">
                             </div>
                             <h3 class="project-heading">Wallas</h3>
                         </div>
 
                         <div class="project">
                             <div class="thumbnail">
-                                <img src="img/Group%20162.png">
+                                <img class="the-img" src="img/Group%20162.png">
                             </div>
                             <h3 class="project-heading">Wallas</h3>
                         </div>
                     </div>
-                    <a href="#">View More</a>
+                    <button onclick="displayWork()">View More</button>
                 </section>
-
                 <form id="form">
                     <div id="cta">
                         <div class="text">
@@ -128,9 +125,13 @@
 
                         <label for="uEmail">Your Email</label>
                         <input type="text" name="uEmail" placeholder="jane.doe@example.com">
+                       <br>
+                       <button type="button" onclick="displayWork()"></button>
                     </div>
                 </form>
             </main>
         </div>
+        
+        <script src="js/gallery.js"></script>
     </body>
 </html>

@@ -2,6 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
 }
+
 /*============Typography=================*/
 h1{
     font-family: 'Open Sans', sans-serif;
@@ -28,7 +29,7 @@ header h5{
 }
 
 .section-text{
-        width: 10%;
+    width: 25%;
 }
 
 .section-text .heading{
@@ -38,9 +39,8 @@ header h5{
 
 .section-text .subheading{
     margin: 0px;
-        line-height: 10px;
+    line-height: 10px;
 }
-
 
 /*============Header==============*/
 
@@ -51,15 +51,27 @@ header{
 }
 
 #branding{
-    bottom: 35px;
-    width: 45vw;
+    /*Margin and Padding*/
     margin-left: 50px;
     padding: 5vw;
+    /*Position*/
     position: absolute;
+    bottom: 0vh;
+    left: -5vw;
+    /*Color*/
+    background: #7a0296;
+    height: 30vh;
+    width: 90vw;
+    -webkit-clip-path: polygon(0 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+header .text{
+    margin-top: 15vh;
 }
 
 header #logo{
     margin-left: 8%;
+    width: 30%;
 }
 
 /*================Form===============*/
@@ -85,17 +97,88 @@ button{
 
 
 /*============== Content =============*/
+
+
 #content{
-    height: 100vh;
-    padding: 75px 50px;
+    padding: 0px;
+    background: #640296;
+    height: 90vh;
+    color: white;
 }
 
 #page-header{
     margin: 0 auto;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 29%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 29%, 0% 100%);
+    background: #7a0296;
+    height: 30vh;
+    width: 100%;
+    color: white;
+}
+
+#page-heading .text{
+    
 }
 
 #content .container{
-    display: inline-grid;
-    grid-auto-columns: 50% 50%;
-    grid-column-gap: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+#call-to-action{
+    -webkit-clip-path: polygon(0 58%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 58%, 100% 0, 100% 100%, 0% 100%);
+    height: 30vh;
+    position: relative;
+    bottom: 15vh;
+    background: #490296;
+}
+
+/***********Form*******/
+#signup{
+    margin: auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: 20vh;
+    color: white;
+}
+
+#signup h3{
+    margin: 0;
+}
+
+#signup h5{
+    margin: 0;
+}
+
+#album-cover{
+    width: 50%;
+}
+
+#album-cover img{
+    width: 100%;
+}
+/***************Footer**************/
+footer{
+    height: 100px;
+    background: black;
+    position: relative;
+}
+
+/*******Icons*********/
+.fa-amazon{
+    color: #dd7632;
+}
+
+/************Table****************/
+table{
+    padding: 25px;
+    border: 1px solid #C40983;
+}
+.show{
+    border-bottom: 1px solid #C40983;
+    margin-bottom: 10px;
 }

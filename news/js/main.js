@@ -1,32 +1,28 @@
-//The Article Title
-var theArticleTitle;
-
-//The Article Image
-var theArticleImage;
-
-//The Article constructor
-function theArticle(mTitle=String, mImage=Image){
-
-    this.theArticleTitle = mTitle;
-    this.theArticleImage = mImage;
-}     
-
-//The Articles
-var articleOne = new theArticle("Bonjour Monde", "../img/globe.jpeg");
-var articleTwo = new theArticle("Comment allez vous?", "../img/download.jpg");
-//var articleThree = new theArticle("","../img/");
-
-
-
-var theImage = document.createElement("IMG");
-
-//Insert Img after article div
-var theArticleDiv = document.getElementsByClassName("article");
-
-
-theImage.after(theArticleDiv);
-function theArticleContainer(){
-    theImage.setAttribute("src", theArticle);
+//init
+function init() {
+    'use strict';   
 }
 
-console.log(articleOne,articleTwo);
+window.onload = init();
+
+function removeElement(x){
+    x.removeChild(this);
+}
+
+function submitForm() {
+    //alert("Thank you");
+    
+    var formSubmitted = "Thank you for signing up!";
+    var formContainer = document.getElementById("inputs");
+    var inputContainer = document.getElementsByClassName("input-and-label");
+    var inputLine = document.getElementsByTagName("input");
+    var formLabels = document.getElementsByTagName("label");
+    
+    removeElement(inputContainer);
+    removeElement(inputLine);
+    removeElement(formLabels);
+    removeElement(submitButton);
+}
+
+var submitButton = document.getElementById("submit");
+submitButton.addEventListener("click", submitButton, true);

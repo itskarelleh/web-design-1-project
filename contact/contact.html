@@ -16,20 +16,24 @@
         <main id="main-content">
             <header>
                 <div id="branding">
-                    <h5>experience</h5>
-                    <a href="../index.html">
-                        <img id="logo" src="../contact/img/her-logo.svg" width="40%">
-                    </a>
-                    <a href="#content">
-                        <button data-target="#content">Begin</button>
-                    </a>
+                    <div class="text">
+                        <h5>experience</h5>
+                        <a href="../index.html">
+                            <img id="logo" src="../contact/img/her-logo-white.svg">
+                        </a>
+                        <a href="#content">
+                            <button data-target="#content">Begin</button>
+                        </a>
+                    </div>
+     
                 </div>
-
             </header>
             <section id="content">
                 <div id="page-header" class="section-text">
-                    <h5 class="subheading">What's</h5>
-                    <h3 class="heading">New</h3>
+                    <div class="text">
+                        <h5 class="subheading">What's</h5>
+                        <h3 class="heading">New</h3>
+                    </div>
                 </div>
                 <div class="container">
                     <div id="album">
@@ -37,11 +41,13 @@
                             <h5 class="subheading">New Album</h5>
                             <h3 class="heading">VOL. 2</h3>
                         </div>
-                        
+                        <figure id="album-cover">
+                            <img src="img/her_12x12.jpg">
+                        </figure>
                         <div class="music">
                             <ul class="album-links">
                                 <li>
-                                    <a href="#"><i class="fab fa-amazon"></i></a>
+                                    <a href="https://open.spotify.com/album/3Bdtv2Y8lHrXOsboFA96hX" target="_blank"><i class="fab fa-amazon"></i></a>
                                 </li>
                                 
                                 <li>
@@ -64,8 +70,26 @@
                         <table id="upcoming">
                             <tbody>
                                 <tr class="show">
-                                    <td class="day">Thu.</td><td class="date">Oct. 25</td>
-                                    <td class="venue">Ecostage</td><td class="location">Washington DC</td>
+                                    <td class="day">Mon,</td><td class="date">Dec 17</td>
+                                    <td class="venue">The Novo</td><td class="location">Los Angeles, CA</td>
+                                    <td><button class="Tickets">Tickets</button></td>
+                                </tr>
+                                
+                                <tr class="show">
+                                    <td class="day">Mon,</td><td class="date">Dec 17</td>
+                                    <td class="venue">Celebrity Theator</td><td class="location">Phoenix, AZ</td>
+                                    <td><button class="Tickets">Tickets</button></td>
+                                </tr>
+                                
+                                <tr class="show">
+                                    <td class="day">Tue,</td><td class="date">Dec 18</td>
+                                    <td class="venue">Observatory</td><td class="location">Santa Ana, CA</td>
+                                    <td><button class="Tickets">Tickets</button></td>
+                                </tr>
+                                
+                                <tr class="show">
+                                    <td class="day">Mon,</td><td class="date">Dec 17</td>
+                                    <td class="venue">The Warfield</td><td class="location">Sf, CA</td>
                                     <td><button class="Tickets">Tickets</button></td>
                                 </tr>
                                
@@ -73,16 +97,26 @@
                         </table>
                     </div>
                 </div>
+                <div id="call-to-action">
+
+                    <form id="signup">
+                        <div class="cta">
+                            <h5 class="subheading">Stay up to date with</h5>
+                            <h3 class="heading">H.E.R.</h3>
+                            <p>Be the first to find out about new music, concert and merchandise</p>
+                        </div>
+                        
+                        <div class="form">
+                            <label>Name</label>
+                            <input type="text" name="fName" placeholder="Keisha Jones">
+
+                            <label>Email</label>
+                            <input type="text" name="eMail" placeholder="herfan@gmail.com">
+                        </div>
+                    </form>
+                </div>
             </section>
-            <div class="call-to-action">
-                <form id="signup">
-                    <label>Name</label>
-                    <input type="text" name="fName" placeholder="Keisha Jones">
-                    
-                    <label>Email</label>
-                    <input type="text" name="eMail" placeholder="herfan@gmail.com">
-                </form>
-            </div>
+            
         </main>
         <footer id="footer">
             <div class="container">

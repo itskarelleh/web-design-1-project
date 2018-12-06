@@ -127,7 +127,7 @@ main{
 #decor{
     width: 4em;
     grid-column: 2/2;
-    height: 1475px;
+    height: 1737px;
     position: absolute;
     left: -20vw;
     bottom: 400px;
@@ -184,8 +184,9 @@ main{
 
 /********* Form/ Call to Action ************/
 #form{
-     display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    border-top: 1px solid #dedede;
 }
 
 
@@ -197,4 +198,10 @@ main{
 
 #cta .text{
     margin-left: 35px;
+}
+
+@media screen and (min-width: 1366) {
+    #decor{
+        height: 1600px;
+    }
 }

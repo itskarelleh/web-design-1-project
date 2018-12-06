@@ -122,6 +122,12 @@ ul li a{
 
 #feature-article .thumbnail .article-heading{
     grid-area: article-heading;
+    position: absolute;
+    width: 38vw;
+    color: white;
+    top: 36vh;
+    padding-left: 25px;
+    background: #10bac88c;
 }
 
 #feature-articles .article img{
@@ -265,4 +271,18 @@ ul li a{
 
 .fa-youtube{
     color:  #ff0000;
+}
+
+/************Media Queries********/
+@media screen and (min-width: 1366px){
+    #feature-articles .article .thumbnail{
+        height: 35vh;
+        overflow: hidden;
+    }
+    
+    main{
+        padding: 45px 100px;
+        background-color: white;
+        margin: 0px 75px;
+    }
 }
