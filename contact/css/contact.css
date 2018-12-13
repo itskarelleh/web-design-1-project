@@ -3,6 +3,14 @@ body{
     padding: 0px;
 }
 
+button{
+    background: white;
+    border: 1px solid #ccc;
+    color: #7a0296;
+    width: 70px;
+    font-family: "Radley", sans-serif;
+    height: 35px;
+}
 /*============Typography=================*/
 h1{
     font-family: 'Open Sans', sans-serif;
@@ -42,29 +50,61 @@ header h5{
     line-height: 10px;
 }
 
-/*============Header==============*/
+/************ Nav ****************/
+#site-nav{
+    text-align: right;
+    margin: 0px;
+}
 
+#site-nav .social-media{
+    margin-right: 75px;
+    padding-top: 10px;
+    
+}
+
+.social-media li{
+    display: inline;
+    margin-right: 25px;
+    font-size: 2em;
+    
+}
+
+ul li a{
+    color: white;
+
+}
+/*============Header==============*/
 header{
-    height: 100vh;
-    background-image: url("../img/h-e-r-gc.jpg");
+    height: 98vh;
+    background-image: url("../img/h-e-r-gc%20(1).jpg");
     background-size: cover;
 }
 
+header .text{
+    position: absolute;
+    width: 75vw;
+    margin: 71px;
+    bottom: 0;
+    z-index: 2;
+}
 #branding{
     /*Margin and Padding*/
     margin-left: 50px;
     padding: 5vw;
+    
     /*Position*/
     position: absolute;
-    bottom: 0vh;
+    bottom: -2vh;
     left: -5vw;
+    
     /*Color*/
     background: #7a0296;
     height: 30vh;
-    width: 90vw;
+    width: 100vw;
     -webkit-clip-path: polygon(0 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 100%, 0% 100%);
 }
+
 header .text{
     margin-top: 15vh;
 }
@@ -75,15 +115,6 @@ header #logo{
 }
 
 /*================Form===============*/
-button{
-    width: 75px;
-    height: 25px;
-    border: 1px solid #fff;
-}
-
-#album .subheading{
-    text-align: right;
-}
 
 .album-links{
     list-style: none;
@@ -97,27 +128,29 @@ button{
 
 
 /*============== Content =============*/
-
-
+main{
+    height: 100vh;
+}
 #content{
     padding: 0px;
     background: #640296;
-    height: 90vh;
     color: white;
 }
 
 #page-header{
     margin: 0 auto;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 29%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 29%, 0% 100%);
     background: #7a0296;
-    height: 30vh;
+    height: 20vh;
     width: 100%;
     color: white;
 }
 
-#page-heading .text{
-    
+#page-header .text{
+    position: relative;
+    left: 5%;
+    top: 20%;
+    margin: 0 auto;
+    width: 10vw;
 }
 
 #content .container{
@@ -131,7 +164,7 @@ button{
     clip-path: polygon(0 58%, 100% 0, 100% 100%, 0% 100%);
     height: 30vh;
     position: relative;
-    bottom: 15vh;
+    bottom: 0vh;
     background: #490296;
 }
 
@@ -142,7 +175,7 @@ button{
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
-    top: 20vh;
+    top: 13vh;
     color: white;
 }
 
@@ -154,12 +187,32 @@ button{
     margin: 0;
 }
 
+input{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    border: none;
+    width: 56%;
+}
+
+/*Album*/
+
+#album{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 #album-cover{
-    width: 50%;
+    width: 45%;
 }
 
 #album-cover img{
     width: 100%;
+}
+
+#album .section-text{
+    margin-left: 75px;
 }
 /***************Footer**************/
 footer{
@@ -178,7 +231,34 @@ table{
     padding: 25px;
     border: 1px solid #C40983;
 }
+ 
 .show{
     border-bottom: 1px solid #C40983;
     margin-bottom: 10px;
+}
+
+/**********Clip Mask*************/
+.clip-mask{
+    -webkit-clip-path: polygon(100% 9%, 14% 100%, 100% 100%);
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    width: 99vw;
+    height: 50vh;
+    background: #c6008a;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.clip-mask:nth-child(2){
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    z-index: 1;
+    width: 99vw;
+    background: #c8008b78;
+}
+/*********MEDIA QUERIES**********/
+@media screen and (min-width: 1280) {
+    #call-to-action{
+        height: 40vh;
+    }
 }

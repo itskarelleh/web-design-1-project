@@ -2,9 +2,14 @@ var navMenu, storeInfo;
 navMenu = document.getElementById("nav-menu");
 storeInfo = document.getElementById("store-info");
 
-
 var hamburgerMenu = document.getElementById("hamburger");
+hamburgerMenu.hidden = true;
 
+if (window.matchMedia("(min-width: 400px)").matches)) {
+    hamburgerMenu.style.visibility = "visible";
+} else {
+    hamburgerMenu.style.visibility = "hidden";
+}
 function showMenuMobile() {
     'use strict';
     
@@ -16,7 +21,7 @@ function showMenuMobile() {
         navMenu.style.visibility = 'visible';
         storeInfo.style.visibility = 'visible';
         buttonClicked = true;
-    } else{
+    } else {
         navMenu.style.visibility = 'hidden';
         storeInfo.style.visibility = 'hidden';
     }
