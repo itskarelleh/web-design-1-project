@@ -28,7 +28,7 @@ img{
     display: block;
 }
 /*Nav*/
-#site-nav{
+#site-nav {
     /* Grid */
     display: grid;
     grid-template-rows: .1fr 2fr .5fr;
@@ -64,10 +64,6 @@ img{
     text-decoration: none;
 }
 
-#site-nav .footer{
-    
-}
-
 .footer .contact-info{
     color: #EBBB4E;
     height: 100px;
@@ -88,12 +84,18 @@ img{
 }
 #branding #logo{
     text-align: center;
+    width: 50%;
+    margin: 0 auto;
 }
 
 #branding{
-    display: block;
-    height: 15%;
     text-align: center;
+    margin-top: 25px;
+}
+
+#tagline{
+    font-weight: 900;
+    font-size: 18px;
 }
 
 /********* Main *************/
@@ -110,7 +112,7 @@ main{
     height: 95vh;
     background-image: url("../img/alex-smith-688708-unsplash.jpg");
     background-size: cover;
-
+    background-repeat: no-repeat;-
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
@@ -135,7 +137,7 @@ main{
     grid-column: 2/2;
     height: 1737px;
     position: absolute;
-    left: -20vw;
+    left: -22vw;
     bottom: 400px;
     top: 140px;
 }
@@ -146,7 +148,7 @@ main{
     letter-spacing: 7px;
 }
 
-#intro-btn{
+button{
     height: 35px;
     background: #EBBB4E;
     color: white;
@@ -160,8 +162,6 @@ main{
     text-decoration: none;
 }
 /************ WORK ****************/
-#work{
-}
 
 #work .container{
     display: grid;
@@ -236,16 +236,12 @@ main{
 }
 
 .thumbnail img{
-/*    position: relative;*/
     width: 100%;
-/*    transform: scale(1);*/
-/*    transition: transform .5s ease-out;*/
 }
 
 .thumbnail img:hover{
     transform: scale(1.2);
     transition: transform .2s ease-in;
-    
 }
 
 
@@ -254,6 +250,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-top: 1px solid #dedede;
+    margin-top: 50px;
 }
 
 
@@ -263,8 +260,16 @@ main{
     background: #EBBB4E;
 }
 
+#form-heading{
+    color: white;
+}
+
 #cta .text{
     margin-left: 35px;
+}
+
+#inputs{
+    padding: 25px;
 }
 
 @media screen and (min-width: 1366) {

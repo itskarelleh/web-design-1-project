@@ -171,11 +171,8 @@ button{
 @media screen and (min-width: 320px) and (max-width: 1300px){
     /* Main Content */
     body{
-        background-position-y: 0vh;
-    }
-
-    #social-profiles{
-        visibility: hidden;
+  
+  
     }
 }
 
@@ -184,15 +181,5 @@ button{
     body{
         background-position-y: center;
         background-position-x: center;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 1000px){
-    #nav-menu{
-        visibility: hidden;
-    }
-    
-    #store-info{
-        visibility: hidden;
     }
 }
